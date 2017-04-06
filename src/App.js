@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './images/logo.svg';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import './stylesheets/App.scss';
@@ -22,7 +21,7 @@ class App extends Component {
         <div className="App">
           <Navbar />
           <Sidebar />
-          <div className="content col-sm-10 offset-sm-2 col-lg-11 offset-lg-1">
+          <div className="main-content col-sm-10 offset-sm-2 col-lg-11 offset-lg-1">
             <Route exact path="/" component={Home}/>
             <Route exact path="/team" component={MyTeam}/>
             <Route exact path="/freeagents" component={FreeAgents}/>
