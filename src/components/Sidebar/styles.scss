@@ -1,0 +1,58 @@
+.sidebar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #262E3E;
+}
+
+.nav-icon-tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+
+  .icon {
+    width: 50px;
+    height: 50px;
+
+    &.settings {
+      background: url('../../images/settings.svg');
+    }
+    &.team {
+      background: url('../../images/myteam.png');
+      background-size: contain;
+    }
+    &.league {
+      background: url('../../images/leagueoffice.png');
+      background-size: contain;
+    }
+    &.freeagency {
+      background: url('../../images/playerchange.png');
+      background-size: contain;
+    }
+    &.standings {
+      background: url('../../images/standings.png');
+      background-size: contain;
+    }
+  }
+
+  .tab-title {
+    margin-top: 5px;
+    color: #BDC3C7;
+  }
+
+  &:hover {
+    background: rgba(0, 113, 212, 0.21);
+  }
+}
